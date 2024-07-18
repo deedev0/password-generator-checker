@@ -36,38 +36,45 @@ Follow these instructions to set up the project on your local machine.
 - Generate Password
 url: /generates
 method: POST
-request body: {
+request body:
+```json
+{
     "password_length": 10,
     "uppercase": true, 
     "numbers": true,
     "symbols": true
 }
-
-response: {
-    "status": "success",
-    "message": "Password berhasil digenerate",
-    "data": {
-        "generated_password": "@:WE)3_4>Q",
-        "score": 3,
-        "crack_time": "12 hari",
-        "exposed_time": 0
-    }
-}
-
+```
+response: 
+   ```json
+      {
+          "status": "success",
+          "message": "Password berhasil digenerate",
+          "data": {
+              "generated_password": "@:WE)3_4>Q",
+              "score": 3,
+              "crack_time": "12 hari",
+              "exposed_time": 0
+          }
+      }
+```
 - Check Password
 - url: /checkers
 - method: POST
-- request body: {
-    "password": "dede"
-
-}
-response: {
-    "status": "success",
-    "message": "Password berhasil dicheck",
-    "data": {
-        "checked_password": "dede",
-        "score": 0,
-        "crack_time": "Kurang dari satu detik",
-        "exposed_time": 9113
-    }
-}
+- request body:
+   ```json
+     {
+       "password": "dede"
+   }
+response: 
+   ```json
+   {
+       "status": "success",
+       "message": "Password berhasil dicheck",
+       "data": {
+           "checked_password": "dede",
+           "score": 0,
+           "crack_time": "Kurang dari satu detik",
+           "exposed_time": 9113
+       }
+   }
