@@ -1,4 +1,4 @@
-# Our Hapi Application
+# PassFort - Password Checkers and Generator [HAPI Application]
 
 This is a simple Hapi server application.
 
