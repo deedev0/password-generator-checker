@@ -33,9 +33,9 @@ Follow these instructions to set up the project on your local machine.
    npm run start:dev
 
 ### API Documentation
-- Generate Password
-url: /generates
-method: POST
+# Generate Password
+- url: /generates
+- method: POST
 request body:
 ```json
 {
@@ -58,12 +58,12 @@ response:
           }
       }
 ```
-- Check Password
+# Check Password
 - url: /checkers
 - method: POST
 - request body:
    ```json
-     {
+   {
        "password": "dede"
    }
 response: 
