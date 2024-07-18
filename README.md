@@ -1,4 +1,4 @@
-# My Hapi Application
+# Our Hapi Application
 
 This is a simple Hapi server application.
 
