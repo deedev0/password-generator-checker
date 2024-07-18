@@ -32,8 +32,8 @@ Follow these instructions to set up the project on your local machine.
    ```bash
    npm run start:dev
 
-### API Documentation
-# Generate Password
+## API Documentation
+### Generate Password
 - url: /generates
 - method: POST
 request body:
@@ -58,14 +58,15 @@ response:
           }
       }
 ```
-# Check Password
+### Check Password
 - url: /checkers
 - method: POST
 - request body:
-   ```json
+```json
    {
-       "password": "dede"
+        "password": "dede"
    }
+```
 response: 
    ```json
    {
